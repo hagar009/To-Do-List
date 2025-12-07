@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"
       rel="stylesheet"
     />
@@ -38,10 +42,13 @@
           <span>ToDoList</span>
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0 shadow-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,7 +80,7 @@
                   type="text"
                   class="form-control me-1"
                   placeholder="Add a new task ..."
-                  autocomplete="off"
+                  autocomplete="on"
                 />
                 <button
                   onclick="addTask()"
@@ -103,8 +110,7 @@
               </h5>
             </div>
           </div>
-          <div class="row justify-content-center gy-3" id="tasks">
-          </div>
+          <div class="row justify-content-center gy-3" id="tasks"></div>
         </div>
 
         <!-- Finished Tasks -->
@@ -117,8 +123,7 @@
               </h5>
             </div>
           </div>
-          <div class="row justify-content-center gy-3" id="finishedTasks">
-          </div>
+          <div class="row justify-content-center gy-3" id="finishedTasks"></div>
         </div>
       </div>
     </section>
